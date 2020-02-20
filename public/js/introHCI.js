@@ -11,3 +11,7 @@ $(document).ready(function() {
 function initializePage() {
 	// your code here
 }
+function clickLike(){
+	console.log("Clicked");
+	ga("send", "event", "like", "click");
+}

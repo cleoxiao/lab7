@@ -40,6 +40,7 @@ app.get('/', index.view);
 app.get('/project/:id', project.view);
 // Example route
 // app.get('/users', user.list);
+app.get('/viewAlt',index.viewAlt);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
